@@ -17,9 +17,10 @@ html {
 
 // reset body line-height
 body {
-  min-height: 100vh; // ! not good
+  height: 100dvh;
   line-height: 1;
   text-rendering: optimizespeed;
+  color: var(--color-font);
 }
 
 // all media elements set to block and full width
