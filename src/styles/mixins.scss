@@ -1,0 +1,5 @@
+@mixin media-w-1366 {
+  @media only screen and (width <= 1366px) {
+    @content;
+  }
+}

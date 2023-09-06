@@ -3,11 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "start": "next dev --turbo",
     "build": "next build",
-    "start": "next start",
+    "start:build": "next start",
+    "husky": "husky install",
     "lint": "next lint",
-    "husky": "husky install"
+    "stylelint:fix": "stylelint --fix \"src/**/*.{css,less,sass,scss,sss}\""
   },
   "dependencies": {
     "@types/node": "20.5.7",
@@ -22,6 +23,15 @@
   },
   "devDependencies": {
     "husky": "^8.0.3",
-    "lint-staged": "^14.0.1"
+    "lint-staged": "^14.0.1",
+    "sass": "^1.66.1",
+    "stylelint": "^15.10.3",
+    "stylelint-config-standard": "^34.0.0",
+    "stylelint-config-standard-scss": "^11.0.0"
+  },
+  "lint-staged": {
+    "./src/**/*.{css,less,sass,scss,sss}": [
+      "yarn stylelint:fix"
+    ]
   }
 }
