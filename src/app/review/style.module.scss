@@ -1,0 +1,5 @@
+@use 'src/styles/mixins';
+
+.review {
+  @include mixins.container-with-music-bar;
+}

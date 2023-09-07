@@ -1,0 +1,19 @@
+@use 'src/styles/mixins';
+
+.music-bar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: calc(100% - var(--global-width-sidebar));
+  height: var(--global-height-musicbar);
+  border-bottom: 1px solid var(--color-border-gray);
+  padding: 5px;
+
+  &__container {
+    margin: 0 auto;
+    max-width: var(--global-max-width-content-with-nav);
+    height: 100%;
+    display: grid;
+    grid-template-columns: calc(30% - 22px) minmax(40%, 900px) calc(30% + 22px);
+  }
+}

@@ -1,4 +1,4 @@
-export const ALL_LINKS = {
+export const ROUTER_LINK = {
   MAIN: '/',
-  REVIEW: '/revew',
+  REVIEW: '/review',
 } as const;

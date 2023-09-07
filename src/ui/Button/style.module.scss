@@ -1,0 +1,13 @@
+.button {
+  padding: 0 10px;
+  min-height: 28px;
+  background-color: var(--color-button-gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+
+  &--red {
+    background-color: var(--color-button-red);
+  }
+}
