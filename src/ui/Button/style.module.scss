@@ -1,13 +1,39 @@
+@layer reset, color, transparent;
+
+@layer reset {
+  button {
+    cursor: pointer;
+    background-color: transparent;
+    -webkit-tap-highlight-color: transparent;
+  
+    &:focus {
+      outline: 0;
+    }
+  }
+}
+
 .button {
   padding: 0 10px;
   min-height: 28px;
-  background-color: var(--color-button-gray);
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 5px;
 
-  &--red {
-    background-color: var(--color-button-red);
+  @layer color {
+    &--red {
+      background-color: var(--color-button-red);
+    }
+
+    &--gray {
+      background-color: var(--color-button-gray);
+    }
+  }
+
+  @layer transparent {
+    &--transparent {
+      background-color: transparent;
+      color: transparent;
+    }
   }
 }

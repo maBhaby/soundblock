@@ -61,17 +61,6 @@ table {
   border-spacing: 0;
 }
 
-// assign button hover state
-button, [role="button"] {
-  cursor: pointer;
-  background-color: transparent;
-  -webkit-tap-highlight-color: transparent;
-
-  &:focus {
-    outline: 0;
-  }
-}
-
 // reset anchor style
 a {
   cursor: pointer;

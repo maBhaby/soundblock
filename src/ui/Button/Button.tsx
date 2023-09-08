@@ -6,21 +6,25 @@ import styles from './style.module.scss';
 
 type IProps = {
   color?: 'red' | 'gray';
+  className?: string;
+  variant?: 'transparent';
 } & ButtonHTMLAttributes<HTMLButtonElement>;
 
 export const Button: React.FC<IProps> = ({
   className,
   children,
   color = 'gray',
+  variant,
   ...props
 }) => {
   return (
     <button
-      className={clsx(styles.button, {
+      {...props}
+      className={clsx(styles.button, className, {
         [styles[`button--${color}`]]: Boolean(color),
+        [styles[`button--${variant}`]]: Boolean(variant),
       })}
       type='button'
-      {...props}
     >
       {children}
     </button>
