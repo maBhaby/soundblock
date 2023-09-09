@@ -6,7 +6,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
   gap: 5px;
+  transition: var(--transition-fast) ;
 
   @layer color {
     &--red {
@@ -15,6 +17,10 @@
 
     &--gray {
       background-color: var(--color-button-gray);
+    }
+
+    &:hover {
+      opacity: .8;
     }
   }
 

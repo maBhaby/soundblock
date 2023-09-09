@@ -26,7 +26,7 @@ const GLOBAL_LINKS = [
 
 export const GlobalNavbar = (): React.ReactElement => {
   return (
-    <article className={styles['global-nav']}>
+    <aside className={styles['global-nav']}>
       <nav>
         <div className={styles['global-nav__top']}>
           <Link
@@ -44,6 +44,6 @@ export const GlobalNavbar = (): React.ReactElement => {
         </div>
         <GlobalLinks links={GLOBAL_LINKS} />
       </nav>
-    </article>
+    </aside>
   );
 };

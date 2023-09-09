@@ -1,5 +1,22 @@
-@use 'src/styles/mixins';
+@use 'mixins';
 
 .review {
   @include mixins.container-with-music-bar;
+
+  &__title {
+    padding: 30px 0 10px;
+    border-bottom: 1px solid var(--color-border-gray);
+  }
+
+  &__music {
+    margin:10px 0 30px;
+
+    &_list {
+      @include mixins.row(20);
+    }
+    
+    &_item {
+      @include mixins.col(2.4, 20);
+    }
+  }
 }

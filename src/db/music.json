@@ -1,0 +1,23 @@
+{
+  "musicList": [
+    {
+      "id": 0,
+      "imageSrc": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/57/f2/9e/57f29e66-d8ff-ac30-7785-d01020753338/0.jpg/632x632bb-60.jpg",
+      "title": "Как ты там",
+      "artist": "Устала курить, Heronwater"
+    },
+    {
+      "id": 1,
+      "imageSrc": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/32/60/55/326055b7-ca1d-633e-28c3-773c8aeffea2/1963621529598_cover.jpg/632x632cc-60.jpg",
+      "title": "Goons",
+      "artist": "Dom Corleo"
+    },
+    {
+      "id": 2,
+      "imageSrc": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/f4/18/1e/f4181ed9-745b-208a-96bd-dc891888224a/cover.jpg/632x632cc-60.jpg",
+      "title": "Молча",
+      "artist": "4n Way"
+    }
+  ]
+}
+
