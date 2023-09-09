@@ -1,5 +1,29 @@
+@mixin media-w-1920 {
+  @media only screen and (width <= 1920px) {
+    @content;
+  }
+}
+
 @mixin media-w-1366 {
   @media only screen and (width <= 1366px) {
     @content;
   }
 }
+
+@mixin container {
+  margin: 0 auto;
+  max-width: var(--global-max-width-content-with-nav);
+
+  @include media-w-1920 {
+    margin: 0 40px;
+  }
+  @content;
+}
+
+@mixin container-with-music-bar {
+  @include container;
+
+  margin-top: var(--global-height-musicbar) !important;
+  @content;
+}
+

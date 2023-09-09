@@ -1,0 +1,27 @@
+@layer reset, color, transparent;
+
+.button {
+  padding: 0 10px;
+  min-height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+
+  @layer color {
+    &--red {
+      background-color: var(--color-button-red);
+    }
+
+    &--gray {
+      background-color: var(--color-button-gray);
+    }
+  }
+
+  @layer transparent {
+    &--transparent {
+      background-color: transparent;
+      color: transparent;
+    }
+  }
+}

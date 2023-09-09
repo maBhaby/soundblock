@@ -17,9 +17,10 @@ html {
 
 // reset body line-height
 body {
-  min-height: 100vh; // ! not good
+  height: 100dvh;
   line-height: 1;
   text-rendering: optimizespeed;
+  color: var(--color-font);
 }
 
 // all media elements set to block and full width
@@ -58,17 +59,6 @@ select {
 table {
   border-collapse: collapse;
   border-spacing: 0;
-}
-
-// assign button hover state
-button, [role="button"] {
-  cursor: pointer;
-  background-color: transparent;
-  -webkit-tap-highlight-color: transparent;
-
-  &:focus {
-    outline: 0;
-  }
 }
 
 // reset anchor style

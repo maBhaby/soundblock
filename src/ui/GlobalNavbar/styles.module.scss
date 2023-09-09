@@ -1,0 +1,39 @@
+.global-nav {
+  background-color: var(--color-gray);
+  
+  &__top {
+    padding: 30px 20px 10px;
+
+    &_link {
+      font-size: 28px;
+      line-height: 120%;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+
+  &__list {
+    margin-top: 30px;
+    padding: 0 20px 10px;
+  }
+
+  &__items {
+    &:not(:last-child){
+      margin-bottom: 5px;
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-radius: 6px;
+    padding: 5px;
+
+    &--active {
+      background-color: var(--color-gray-active);
+    }
+  }
+}

@@ -1,7 +1,7 @@
 const Home = () => {
   return (
-    <main>asd</main>
-  )
-}
+    <main>asd aksndjjasbnfvb a sdfasvfgvasdbas asfvas </main>
+  );
+};
 
-export default Home
+export default Home;
