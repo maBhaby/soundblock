@@ -1,17 +1,5 @@
 @layer reset, color, transparent;
 
-@layer reset {
-  button {
-    cursor: pointer;
-    background-color: transparent;
-    -webkit-tap-highlight-color: transparent;
-  
-    &:focus {
-      outline: 0;
-    }
-  }
-}
-
 .button {
   padding: 0 10px;
   min-height: 28px;

@@ -1,9 +1,9 @@
 import React from 'react';
 
 import { Player } from '../Player/Player';
+import { Slider } from '../Slider/Slider';
 
 import styles from './style.module.scss';
-import { Slider } from '../Slider/Slider';
 
 export const MusicBar = (): React.ReactElement => {
   return (
