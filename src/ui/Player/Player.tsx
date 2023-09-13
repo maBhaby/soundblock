@@ -1,12 +1,16 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import { Button } from '../Button/Button';
 
 import styles from './styles.module.scss';
+import { audioStore } from '@/store/audioStore';
 
 export const Player = (): React.ReactElement => {
+  const audio = audioStore((store) => store.AudioService);
+  console.log('audio', audio);
+
   return (
     <div className={styles.player}>
       <Button
@@ -48,6 +52,7 @@ export const Player = (): React.ReactElement => {
       <Button
         className={styles.player__play}
         variant='transparent'
+        onClick={audio.play}
       >
         <svg
           fill='currentColor'

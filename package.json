@@ -24,13 +24,15 @@
     "zustand": "^4.4.1"
   },
   "devDependencies": {
+    "file-loader": "^6.2.0",
     "husky": "^8.0.3",
     "lint-staged": "^14.0.1",
     "prettier": "^3.0.3",
     "sass": "^1.66.1",
     "stylelint": "^15.10.3",
     "stylelint-config-standard": "^34.0.0",
-    "stylelint-config-standard-scss": "^11.0.0"
+    "stylelint-config-standard-scss": "^11.0.0",
+    "url-loader": "^4.1.1"
   },
   "lint-staged": {
     "./src/**/*.{js,ts,tsx,jsx}": [
