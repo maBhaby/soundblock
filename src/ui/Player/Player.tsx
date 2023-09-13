@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect } from 'react';
+import React from 'react';
 
 import { Button } from '../Button/Button';
 
@@ -8,7 +8,7 @@ import styles from './styles.module.scss';
 import { audioStore } from '@/store/audioStore';
 
 export const Player = (): React.ReactElement => {
-  const audio = audioStore((store) => store.AudioService);
+  const audio = audioStore((store: any) => store.AudioService);
   console.log('audio', audio);
 
   return (
